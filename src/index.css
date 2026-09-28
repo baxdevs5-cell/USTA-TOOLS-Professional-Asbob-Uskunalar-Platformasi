@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  html.light {
+    color-scheme: light;
+  }
+
+  html.light body {
+    background-color: #f8fafc;
+    color: #0f172a;
+  }
+
+  html.light .bg-neutral-950 {
+    background-color: #f1f5f9 !important;
+    color: #0f172a !important;
+  }
+
+  html.light .bg-neutral-900 {
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+  }
+
+  html.light .bg-neutral-900\/80,
+  html.light .bg-neutral-900\/90,
+  html.light .bg-neutral-900\/60,
+  html.light .bg-neutral-900\/40 {
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+  }
+
+  html.light .border-neutral-800,
+  html.light .border-neutral-850,
+  html.light .border-neutral-900 {
+    border-color: #e2e8f0 !important;
+  }
+
+  html.light .text-white {
+    color: #0f172a !important;
+  }
+
+  html.light .text-neutral-100 {
+    color: #1e293b !important;
+  }
+
+  html.light .text-neutral-200 {
+    color: #334155 !important;
+  }
+
+  html.light .text-neutral-300 {
+    color: #475569 !important;
+  }
+
+  html.light .text-neutral-400 {
+    color: #64748b !important;
+  }
+}
+
+/* Industrial custom scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+html.light ::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f59e0b;
+}
